@@ -1,0 +1,126 @@
+.business-section {
+    width: 90vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: space-between;
+
+    @include media(">desktop") {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    h2 {
+        margin: 0px;
+        font-weight: normal;
+    }
+
+    hr {
+        width: 100%;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        border: solid 1px #353535;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .content {
+        display: flex;
+        box-shadow: 0px 0px 10px #606060;
+        background: rgb(30, 30, 30) none repeat scroll 0% 0%;
+        border-radius: 4px;
+        outline: currentcolor none medium;
+        border-radius: 20px;
+        margin: auto;
+
+        .email-link {
+            font-size: 1.2rem;
+            color: antiquewhite;
+            text-decoration: none;
+          }
+          
+        .email-link:hover {
+            transition: all .2s;
+            color: rgb(82, 82, 82);
+        }
+
+        .header, .detail, .qrcode {
+            padding: 2vh;
+            display: grid;
+            text-align: center;
+            margin: auto;
+        }
+    
+        .header {
+            padding-left: 5vh;
+            padding-bottom: 0px;
+        }
+
+        .qrcode {
+            padding-right: 5vh;
+        }
+    
+        .detail {
+            margin-top: 4vh;
+            padding-left: 10vh;
+            padding-right: 10vh;
+        }
+    
+        .social-icons {
+            margin-top: 20px;
+            img {
+              height: 3rem;
+              margin: 10px;
+              filter: invert(1);
+            }
+        }
+
+        #social-icon:hover {
+            filter: invert(1);
+        }
+    
+        #avatar {
+            height: auto !important;
+            width: 120px;
+            border-radius: 100px;
+            height: -webkit-min-content;
+            height: -moz-min-content;
+            height: min-content;
+            margin: auto;
+            -o-object-fit: contain;
+            object-fit: contain;
+            transition: all .2s;
+        }
+
+        #avatar:hover {
+            transition: all .2s;
+            transform: scale(105%);
+            box-shadow: 0 0 10px #fff;
+        }
+
+        
+        @include media(">=phone", "<desktop") {
+            flex-direction: column;
+            width: 100%;
+
+            #avatar {
+                width: 80px;
+                margin-right: 3vh;
+            }
+
+            .header, .detail, .qrcode {
+                padding-left: 0px;
+                padding-right: 0px;
+                margin-top: auto;
+            }
+
+            .header {
+                display: flex;
+            }
+        }
+    }
+}

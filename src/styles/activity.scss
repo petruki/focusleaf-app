@@ -1,0 +1,106 @@
+.activity-wrapper {
+  width: 80vw;
+  margin-bottom: 5vh;
+  margin-top: 3vh;
+  margin-left: auto;
+  margin-right: auto;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  hr {
+    color: #4a4a4a;
+  }
+
+  span {
+    margin-left: 1vh;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .post, iframe, .activity {
+    width: inherit;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  iframe {
+    max-width: 800px;
+  }
+
+  #activity-pagination {
+    margin-top: 3vh;
+    text-align: center;
+  }
+
+  .btn {
+    display: initial;
+    background-color: black;
+    box-shadow: 0 0 10px black;
+    color: white;
+    padding: 10px;
+    margin: 2px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    transition: all .3s;
+    background-color: rgba(51, 51, 51, 0.945);
+  }
+
+  .btn-disable {
+    pointer-events: none;
+    padding: 10px;
+    margin: 2px;
+    background-color: black;
+    box-shadow: 0 0 10px black;
+    opacity: 0.5;
+  }
+
+  .activity {
+    opacity: 0;
+  }
+
+  .show {
+    animation: 1s ease-out 0s 1 fadeIn;
+    opacity: 1;
+  }
+
+  #slider {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+  }
+
+  .topic {
+    text-align: center;
+    
+    a {
+      text-decoration: none;
+      font-size: larger;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
