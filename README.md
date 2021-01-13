@@ -1,3 +1,5 @@
+![Focuslead: Portfolio Generator](https://raw.githubusercontent.com/petruki/focusleaf-assets/master/logo/focusleaf_transparent_1280.png)
+
 ## About
 
 **Focusleaf** is a simple, nice looking and ultra performable Portfolio generator. The main goal is to provide a high-end platform to display user's work and skills using the top notch web frameworks.
